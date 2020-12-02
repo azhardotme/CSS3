@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+
+    <style>
+
+        .flex-container{
+            background-color: rgb(47, 108, 161);
+            display: flex;
+            /*flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;*/
+            flex-flow: wrap row;
+            justify-content: space-around;
+            align-items: center;
+            height: 300px;
+        }
+
+        .flex-container > div{
+            background-color: rgb(124, 16, 52);
+            font-size: 30px;
+            margin: 10px;
+            padding: 20px;
+            width: 100px;
+}
+
+    </style>
+</head>
+<body>
+<h2>Create one-dimensional layout using FlexBox.</h2>
+    <div class="flex-container">
+        <div class="div1" style="order:2;">
+            div1
+        </div>
+        <div class="div2" style="order:3;">
+            div2
+
+        </div>
+
+        <div class="div3" style="order:1;">
+            div3
+
+        </div>
+        <div class="div4"style="order:4;">
+            div4
+
+        </div>
+        <div class="div5"style="order:5;">
+            div5
+
+        </div>
+        <div class="div6" style="order:6;">
+            div6
+
+        </div>
+    </div>
+    
+</body>
+</html>
